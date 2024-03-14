@@ -46,6 +46,14 @@ Marge the ***(main)*** branch with ***(feature/post-data-blog)*** feature branch
 
 [<img src="./assets/README-screenshots/testing-example-online-page2.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/testing-example-online-page2.PNG)
 
+*Error message for empty field(s)...*
+
+[<img src="./assets/README-screenshots/error-message-testing.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/error-message-testing.PNG)
+
+*Different style applied with toggle button...*
+
+[<img src="./assets/README-screenshots/gray-background.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/gray-background.PNG)
+
 Repository over GitHub account you can find [GitHub Repos][1] and application deployment at [GitHub Pages][2].
 
 [1]: https://github.com/strahinjapopovic/blog-api/           "GitHub Repos"
