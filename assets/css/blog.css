@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/* =============================================================
+ 	First Name			: 	Strahinja     					    
+ 	Last Name			: 	Popovic					            
+ 	Developer Name      : 	CodexDeveloper			        
+ 	WebMaster Email		:	spope.mails@gmail.com               
+ ============================================================== */
+
+/* ***************************************************************************************** */
+/* Definition of the css stylingn variables ************************************************ */
+/* ***************************************************************************************** */
+:root {
+    --dark: black;
+    --light: white; 
+    --gray: rgb(240, 240, 240);
+    --gray-dark: rgb(23,23,23);
+    --electron-blue: rgb(8,129,209);
+    --naval-blue: rgba(1,33,55,1.00);
+    --light-web-blue: rgb(12, 209, 235);
+}
+
+body header#header-main {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body header#header-main p {
+    width: 100%;
+    margin-left: 0;
+    line-height: 1.2;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin-bottom: 20px;
+}
+
+button#black-btn, 
+button#gray-btn {
+    left: calc(50% + 1px);
+}
+
+button#back-btn {
+    width: 130px;
+    outline: none;
+    overflow: hidden;
+    color: var(--light-web-blue);
+    left: calc(50% - 130px - 1px);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid var(--light-web-blue);
+}
+
+button#back-btn:hover {
+    color: var(--light);
+}
+
+main#container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer#blog-footer {
+    width: 70%;
+}
+
+footer#blog-footer p {
+    margin-left: 0px;
+}
+

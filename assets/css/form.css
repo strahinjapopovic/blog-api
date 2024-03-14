@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+/* =============================================================
+ 	First Name			: 	Strahinja     					    
+ 	Last Name			: 	Popovic					            
+ 	Developer Name      : 	CodexDeveloper			        
+ 	WebMaster Email		:	spope.mails@gmail.com               
+ ============================================================== */
+
+/* ***************************************************************************************** */
+/* Definition of the css stylingn variables ************************************************ */
+/* ***************************************************************************************** */
+:root {
+  --dark: black;
+  --light: white; 
+  --gray: rgb(240, 240, 240);
+  --gray-dark: rgb(23,23,23);
+  --electron-blue: rgb(8,129,209);
+  --naval-blue: rgba(1,33,55,1.00);
+  --light-web-blue: rgb(12, 209, 235);
+}
+
+form.data-post {
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    padding: 20px 20px;
+    flex-direction: column;
+    background-color: var(--dark);
+    border: 1px solid var(--light-web-blue);
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    letter-spacing: 2px;
+    color: var(--light-web-blue);
+    font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    color: var(--light);
+    background-color: var(--gray-dark);
+    border: 1px solid var(--light-web-blue);
+  }
+
+  input[type=submit] {
+    width: 100%;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: large;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: var(--light-web-blue);
+    background-color: var(--dark);
+    border: 1px solid var(--light-web-blue);
+    font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  input[type=text]:focus{
+    outline-color: var(--light-web-blue);
+  }
+  
+  input[type=submit]:hover {
+    color: var(--electron-blue);
+  }
+
+  textarea {
+    height: 150px;
+    margin-top: 5px;
+    color: var(--light);
+    padding: 5px 5px 5px 5px;
+    background-color: var(--gray-dark);
+    border: 1px solid var(--light-web-blue);
+  }
+
+  textarea:focus {
+    outline-color: var(--light-web-blue);
+  }

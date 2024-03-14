@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+/* =============================================================
+ 	First Name			: 	Strahinja     					    
+ 	Last Name			: 	Popovic					            
+ 	Developer Name      : 	CodexDeveloper			        
+ 	WebMaster Email		:	spope.mails@gmail.com               
+ ============================================================== */
+
+/* ***************************************************************************************** */
+/* Definition of the css stylingn variables ************************************************ */
+/* ***************************************************************************************** */
+
+:root {
+    --dark: black;
+    --light: white; 
+    --gray: rgb(240, 240, 240);
+    --gray-dark: rgb(23,23,23);
+    --electron-blue: rgb(8,129,209);
+    --naval-blue: rgba(1,33,55,1.00);
+    --light-web-blue: rgb(12, 209, 235);
+}
+
+body {
+    color: var(--light-web-blue);
+    background-color: var(--dark);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    line-height: 2;
+    letter-spacing: 2px;
+    flex-direction: row;
+    color: var(--light-web-blue);
+    border-bottom: 1px solid var(--light-web-blue);
+    font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header.blog-header p {
+    font-size: 50px;
+    margin-left: 100px;
+    width: calc(50% - 100px);
+}
+
+header.blog-header section.change-mode-sec {
+    height: 70px;
+    line-height: 2;
+    position: relative;
+    margin-right: 100px;
+    width: calc(50% - 100px);
+    border: 1px solid var(--light-web-blue);
+}
+
+header.blog-header span {
+    color: var(--light);
+}
+
+main.container-main {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+section.blog-banner {
+    width: 50%;
+    background-size: cover;
+    background-image: url(../images/backgrounds/milky-way.jpg);
+}
+
+section.form-section {
+    width: 50%;
+    height: auto;
+    background-color: var(--light-web-blue);
+}
+
+div.form-title {
+    font-size: 40px;
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0 0 20px 0;
+    color: var(--light);
+    width: calc(100% - 0px);
+    border-bottom:  1px solid var(--light-web-blue);
+    font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ***************************************************************************************** */
+/* Mode buttton change color section ******************************************************* */
+/* ***************************************************************************************** */
+button {
+    top: 25px;
+    right: 100px;
+    width: 180px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 2px;
+    border: 1px solid var(--light-web-blue);
+    font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+button.black-btn:hover{
+    background-color: var(--gray-dark);
+} 
+
+button.gray-btn:hover {
+    background-color: var(--dark);
+}
+
+button.black-btn::after {
+    content: "Dark";
+}
+
+button.black-btn:hover::after {
+    content: "Gray";
+    
+}
+
+button.gray-btn::after {
+    content: "Gray";
+}
+
+button.gray-btn:hover::after {
+    content: "Dark";
+}
+
+button.black-btn {
+    display: block;
+    color: var(--light-web-blue);
+    background-color: var(--dark);
+}
+
+button.gray-btn {
+    display: none;
+    color: var(--light-web-blue);
+    background-color: var(--gray-dark);
+}
+
+/* ***************************************************************************************** */
+/* Footer section ************************************************************************** */
+/* ***************************************************************************************** */
+footer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: left;
+    background-color: var(--black);
+    border-top: 1px solid var(--light-web-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p span.span-info {
+    color: var(--gray);
+}
+
+footer p {
+    left: 100px;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0 100px 0 100px;
+    color: var(--light-web-blue);
+}
+
+footer p:first-child {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-family: 'furore', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p:last-child {
+    bottom: 50px;
+    border-bottom: 0px solid var(--light-web-blue);
+}
+
+/* ***************************************************************************************** */
+/* End of Footer section ******************************************************************* */
+/* ***************************************************************************************** */
