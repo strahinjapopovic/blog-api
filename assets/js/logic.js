@@ -16,7 +16,7 @@ function displayBlackMode() {
     document.getElementById('black-btn').style.display = 'block';
     document.querySelector('body').style.background = 'black';
     document.getElementById('data-post').style.background = 'black';
-    document.getElementById('submit').style.background = 'black';
+    document.getElementById('submit-btn').style.background = 'black';
     document.getElementById('userName').style.background = 'rgba(40,40,40)';
     document.getElementById('title').style.background = 'rgba(40,40,40)';
     document.getElementById('content').style.background = 'rgba(40,40,40)';
@@ -28,7 +28,7 @@ function displayGrayMode() {
     document.getElementById('gray-btn').style.display = 'block';
     document.querySelector('body').style.background = 'rgba(23,23,23)';
     document.getElementById('data-post').style.background = 'rgba(23,23,23)';
-    document.getElementById('submit').style.background = 'rgba(23,23,23)';
+    document.getElementById('submit-btn').style.background = 'rgba(23,23,23)';
     document.getElementById('userName').style.background = 'rgba(48,48,48)';
     document.getElementById('title').style.background = 'rgba(48,48,48)';
     document.getElementById('content').style.background = 'rgba(48,48,48)';

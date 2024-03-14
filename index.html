@@ -23,6 +23,7 @@
 <body>
     <header class="blog-header">
         <p>Full-Stack <span>Blog API</span></p>
+        
         <section id="change-mode-sec">
             <button type="button" id="black-btn" class="black-btn" onclick="displayGrayMode();">Mode: </button>
             <button type="button" id="gray-btn" class="gray-btn" onclick="displayBlackMode();">Mode: </button>
@@ -32,13 +33,17 @@
         <section class="blog-banner"></section>
         <section id="form-section" class="form-section">
             <form class="data-post" id="data-post">
-                <div class="form-title">Full-Stack Blog >>></div>
-                <label for="userName">Username</label>
-                <input type="text" id="userName" name="userName" value="" placeholder="Enter Your Username" autocomplete="username"/>
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title" value="" placeholder="Entere Your Title" />
-                <label for="content">Content</label>
-                <textarea id="content" name="content" placeholder="Blog post content here..."></textarea>
+                <div class="form-title">Full-Stack Blog >>>
+                    <p id="errorMessage" style="font-size: large; color: rgb(10, 151, 64); 
+                    font-family: 'furore', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;
+                    padding: 5px 0 0 0; font-weight: bolder; font-style: italic;"></p>
+                </div>
+                <label for="userName">Username *</label>
+                <input type="text" id="userName" name="userName" value="" placeholder="Enter Your Username" autocomplete="username"  required>
+                <label for="title">Title *</label>
+                <input type="text" id="title" name="title" value="" placeholder="Entere Your Title" required>
+                <label for="content">Content *</label>
+                <textarea id="content" name="content" placeholder="Blog post content here..." required></textarea>
                 <input type="submit" id="submit-btn" name="submit-btn" value="Send-Post&rarr;" />
             </form>
         </section>
