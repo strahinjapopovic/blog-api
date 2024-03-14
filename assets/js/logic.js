@@ -36,6 +36,6 @@ function displayGrayMode() {
 
 function displayPostPage() {
     console.log("click");
-    window.location.assign("http://127.0.0.1:5500/blog-api/index.html");
+    window.location.assign("https://strahinjapopovic.github.io/blog-api/");
     console.log(window.location);
 }

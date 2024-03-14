@@ -25,6 +25,6 @@ SUBMIT_POST_BTN.addEventListener("click", function(e) {
 	
 	console.log(`Username: ${parsedDATA["username"]}\nTitle: ${parsedDATA["title"]}\nContent: ${parsedDATA["content"]}`);
 
-	window.location.assign("http://127.0.0.1:5500/blog-api/blog.html");
+	window.location.assign("https://strahinjapopovic.github.io/blog-api/blog.html");
 });
 
