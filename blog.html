@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Embed Google Roboto Font Code  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/google-font.css" />
+    <!-- Favicon added to the site main search bar -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/b-favicon.png" />
+    <!-- Default base style alocated at rest.css -->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/rest.css" />
+    <!-- Main style applied to the website elements through assets/css/style.css-->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/style.css" />
+    <!-- Additional style applied to the website elements through assets/css/blog.css-->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/blog.css" />
+    <!-- Custom font applied to website Furore-regular -->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/cfonts/furore-font-pac/web-font/furore-regular/style-cfont-furore.css" />
+    <title>BLOG | Full-Stack Blog Posts</title>
+</head>
+<body>
+    <header class="blog-header" id="header-main">
+            <button type="button" id="back-btn" class="back-btn" onclick="displayPostPage();">&#60;&#60;&#60; Post</button>
+            <button type="button" id="black-btn" class="black-btn" onclick="displayGrayMode();">Mode: </button>
+            <button type="button" id="gray-btn" class="gray-btn" onclick="displayBlackMode();">Mode: </button>
+            <p>Full-Stack <span>Blog API</span></p>
+    </header>
+    <main class="container-main" id="container-main">
+        <section id="posts-section" style="width: 70%; margin: 0 auto;">
+            <ul id="ul-post-data" style="color: white; white-space: pre-line; width: 90%; height: auto; font-size: 20px; margin: 20px auto 20px auto; 
+            padding: 0px 20px 5px 20px; line-height: 1.5; text-align: justify; background-color: rgb(35, 41, 41); border: 1px solid rgb(12, 209, 235);">
+            </ul>
+        </section>
+    </main>
+    <footer id="blog-footer">
+        <p>Blog<span class="span-info">API</span></p>
+        
+        <p>Copyright&copy;
+            <script
+                type="text/javascript"> var date = new Date(); var year = date.getFullYear(); document.write(year);</script>
+            CodexDeveloper.<br clear="all" />All rights reserved.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/blog.js"></script>
+    <script type="text/javascript" src="./assets/js/logic.js"></script>
+</body>
+</html>

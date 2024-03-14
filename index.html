@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Blog API</title>
+    <!-- Embed Google Roboto Font Code  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/google-font.css" />
+    <!-- Favicon added to the site main search bar -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/b-favicon.png" />
+    <!-- Default base style alocated at rest.css -->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/rest.css" />
+    <!-- Main style applied to the website elements through assets/css/style.css-->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/style.css" />
+    <!-- Additional style applied to the website elements through assets/css/blog.css-->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/css/form.css" />
+    <!-- Custom font applied to website Furore-regular -->
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="./assets/cfonts/furore-font-pac/web-font/furore-regular/style-cfont-furore.css" />
+    <title>BLOG | Full-Stack Blog API</title>
 </head>
 <body>
-    <header>
-        <h1>Blog API</h1>
-    </header>
-    <main>
-        <section>
-
+    <header class="blog-header">
+        <p>Full-Stack <span>Blog API</span></p>
+        <section id="change-mode-sec">
+            <button type="button" id="black-btn" class="black-btn" onclick="displayGrayMode();">Mode: </button>
+            <button type="button" id="gray-btn" class="gray-btn" onclick="displayBlackMode();">Mode: </button>
         </section>
-        <form>
-            
-        </form>
+    </header>
+    <main class="container-main">
+        <section class="blog-banner"></section>
+        <section id="form-section" class="form-section">
+            <form class="data-post" id="data-post">
+                <div class="form-title">Full-Stack Blog >>></div>
+                <label for="userName">Username</label>
+                <input type="text" id="userName" name="userName" value="" placeholder="Enter Your Username" autocomplete="username"/>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="" placeholder="Entere Your Title" />
+                <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Blog post content here..."></textarea>
+                <input type="submit" id="submit-btn" name="submit-btn" value="Send-Post&rarr;" />
+            </form>
+        </section>
     </main>
     <footer>
-
+        <p>Blog<span class="span-info">API</span></p>
+        <p>Copyright&copy;
+            <script
+                type="text/javascript"> var date = new Date(); var year = date.getFullYear(); document.write(year);</script>
+            CodexDeveloper. All rights reserved.
+        </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/form.js"></script>
+    <script type="text/javascript" src="./assets/js/logic.js"></script>
 </body>
 </html>
